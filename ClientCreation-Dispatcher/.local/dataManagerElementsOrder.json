@@ -1,0 +1,375 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder",
+        "in_ConfigFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outCellValue&Sequence_15",
+        "dic_SubmissionWizardQueueItem&Flowchart_1",
+        "ApplicationName&Flowchart_1",
+        "dt_LoginDetails&Flowchart_1",
+        "dic_Credentials&Flowchart_1",
+        "ClientID&Flowchart_1",
+        "dr_CCHRowData&Flowchart_1",
+        "dic_CCHQueueItem&Flowchart_1",
+        "ti_QueueItem&Flowchart_1",
+        "isError&Flowchart_1",
+        "Counter&Flowchart_1",
+        "ErrorMessage&Flowchart_1",
+        "isRowFound&Flowchart_1",
+        "outCellValue&Sequence_13",
+        "outCellValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionID",
+        "in_TransactionItem",
+        "in_TransactionNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/CCH.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Element_Exist&Sequence_267",
+        "Str_ElementExits&Sequence_267",
+        "isCCHOpen&Flowchart_2",
+        "dt_logindata&Flowchart_2",
+        "dt_ClientDetails&Flowchart_2",
+        "Exist_LoggedIn&Flowchart_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_ClientId",
+        "in_DictCredentials",
+        "out_CurrentRow",
+        "out_isRowFound",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/GoSystem/GoSystem-Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ClientData&Flowchart_1",
+        "int_IndexCount&Flowchart_1",
+        "dt_logindata&Sequence_1",
+        "outCellValue&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_Dic_Credential",
+        "out_ClientId",
+        "out_ExecuteRow",
+        "in_TransactionItem",
+        "out_isRowFound"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/GoSystem/GoSystem - CreateReturnID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Out_Exception&Flowchart_1",
+        "Exist_FailedMessage&Sequence_102",
+        "strReturnID&Sequence_132"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_Dic_Credential",
+        "in_CurrentRow",
+        "out_ClientId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/GoSystem/GoSystem-Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isGoSystemLoggedIn&Flowchart_1",
+        "Out_Exception&Flowchart_1",
+        "Exist_FailedMessage&Sequence_9",
+        "Client_Id&Sequence_9",
+        "isCaptchaAppeared&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Exist_WrongCredentials",
+        "Dict_Credential"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/GoSystem/GoSystem - UpdateBasicInfo.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ClientData&Flowchart_1",
+        "Out_Exception&Flowchart_1",
+        "abc&Sequence_137"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClientId",
+        "in_dr_CurrentRow",
+        "in_Dic_Credential"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "test&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/GoSystem/GoSystem_LogOff.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Exist_FailedMessage&Sequence_2",
+        "in_ClientId&Sequence_2",
+        "strReturnID&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Dic_Credential"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/ProformaDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_PayerName&Sequence_97",
+        "Str_ElementExit&Sequence_76",
+        "Str_PayerName&Sequence_88",
+        "abc&Sequence_90",
+        "Str_PayerName&Sequence_89"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "currentrow"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Dispatcher-Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dic_SubmissionWizardQueueItem&Flowchart_1",
+        "ApplicationName&Flowchart_1",
+        "dt_LoginDetails&Flowchart_1",
+        "dic_Credentials&Flowchart_1",
+        "ClientID&Flowchart_1",
+        "dr_ClientCreation&Flowchart_1",
+        "dic_QueueItem&Flowchart_1",
+        "ti_QueueItem&Flowchart_1",
+        "isError&Flowchart_1",
+        "Counter&Flowchart_1",
+        "ErrorMessage&Flowchart_1",
+        "isRowFound&Flowchart_1",
+        "dt_ConsoHeader&Sequence_23",
+        "dt_TempTable&Sequence_23",
+        "dr_TempRow&Sequence_23",
+        "outCellValue&Sequence_32",
+        "outCellValue&Sequence_26",
+        "outCellValue&Sequence_15",
+        "outCellValue&Sequence_43",
+        "outCellValue&Sequence_42",
+        "outCellValue&Sequence_37",
+        "outCellValue&Sequence_36",
+        "outCellValue&Sequence_24"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionID",
+        "in_TransactionItem",
+        "in_TransactionNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/Lacerte.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ClientDetails&Flowchart_1",
+        "LastClientIdCreated&Flowchart_1",
+        "indx_Duplicate&Flowchart_1",
+        "bool_DuplicateClient&Flowchart_1",
+        "isLacerteOpen&Flowchart_1",
+        "int_IndexCount&Sequence_62"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionItem",
+        "in_DictCredentials",
+        "out_ClientId",
+        "out_isRowFound",
+        "out_CurrentRow"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/ULTRA.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_IndexCount&Sequence_131",
+        "dt_ClientDetails&Flowchart_1",
+        "LastClientIdCreated&Flowchart_1",
+        "isUltraOpen&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_CurrentRow",
+        "in_DictCredentials",
+        "out_ClientID",
+        "in_TransactionItem",
+        "out_isRowFound"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tax Softwares/PRO.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ClientDetails&Flowchart_1",
+        "Client_ID&Flowchart_1",
+        "LastClientIdCreated&Flowchart_1",
+        "indx_Duplicate&Flowchart_1",
+        "bool_DuplicateClient&Flowchart_1",
+        "Arr_Alphabates&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Dict_Credentials",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
